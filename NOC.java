@@ -89,7 +89,13 @@ import javax.swing.SwingConstants;
 		btnClear.setBounds(215, 525, 117, 20);
 		getContentPane().add(btnClear);
 		
+		//Changes Done
 		JButton btnSubmit = new JButton("submit");
+		btnSubmit.setBackground(Color.BLUE);
+		btnSubmit.setForeground(Color.MAGENTA);
+		btnSubmit.setBounds(65, 516, 89, 23);
+		getContentPane().add(btnSubmit);
+		
 		btnSubmit.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				
@@ -108,11 +114,6 @@ import javax.swing.SwingConstants;
 				
 			}
 		});
-		
-		btnSubmit.setBackground(Color.BLUE);
-		btnSubmit.setForeground(Color.MAGENTA);
-		btnSubmit.setBounds(60, 524, 89, 23);
-		getContentPane().add(btnSubmit);
 		
 		textField_3 = new JTextField();
 		textField_3.setColumns(10);
