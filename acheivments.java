@@ -103,14 +103,17 @@ public class acheivments extends JFrame {
 		lblField.setBounds(155, 277, 56, 16);
 		contentPane.add(lblField);
 		
-		JLabel lblLinkOfCertificateproff = new JLabel("Link of certificate/Proof");
+		JLabel lblLinkOfCertificateproff = new JLabel("IDProof");
 		lblLinkOfCertificateproff.setBounds(155, 380, 141, 16);
 		contentPane.add(lblLinkOfCertificateproff);
 		
-		link = new JTextField();
-		link.setBounds(360, 377, 190, 22);
-		contentPane.add(link);
-		link.setColumns(10);
+		String []dd2= {"AADHAR CARD" ,"PAN CARD", "VOTER ID"};
+		
+		//link = new JTextField();
+		comboBox = new JComboBox(dd2);
+		comboBox.setBounds(360, 377, 190, 22);
+		contentPane.add(comboBox);
+		//link.setColumns(10);
 		
 		JLabel lblDescription = new JLabel("Description");
 		lblDescription.setBounds(155, 451, 100, 16);
