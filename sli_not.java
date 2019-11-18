@@ -118,6 +118,11 @@ public class sli_not extends JFrame {
 		textField_6.setBounds(266, 132, 120, 20);
 		contentPane.add(textField_6);
 		
+		JButton btnClear = new JButton("Clear");
+		
+		btnClear.setBounds(263, 517, 117, 20);
+		getContentPane().add(btnClear);
+		
 		btnSubmit = new JButton("Submit");
 		btnSubmit.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -166,6 +171,21 @@ public class sli_not extends JFrame {
 		JLabel lblddmmyyyy = new JLabel("*dd/mm/yyyy");
 		lblddmmyyyy.setBounds(190, 296, 98, 14);
 		contentPane.add(lblddmmyyyy);
+		
+		btnClear.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				textField.setText(null);
+				textField_1.setText(null);
+				textField_2.setText(null);
+				
+				textField_3.setText(null);
+				textField_4.setText(null);
+				textField_6.setText(null);
+				
+				
+				
+			}
+		});
 		
 	}
 }
