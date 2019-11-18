@@ -89,7 +89,6 @@ import javax.swing.SwingConstants;
 		btnClear.setBounds(215, 525, 117, 20);
 		getContentPane().add(btnClear);
 		
-		//Changes Done
 		JButton btnSubmit = new JButton("submit");
 		btnSubmit.setBackground(Color.BLUE);
 		btnSubmit.setForeground(Color.MAGENTA);
