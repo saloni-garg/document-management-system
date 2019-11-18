@@ -75,6 +75,15 @@ public class Makeupex extends JFrame
 		getContentPane().add(textField_2);
 		textField_2.setColumns(10);
 		
+		JLabel lblsubject = new JLabel("Subject for MakeUp Exam");
+		lblsubject.setBounds(65, 115, 89, 14);
+		getContentPane().add(lblsubject);
+		
+		textField_5 = new JTextField();
+		textField_5.setBounds(263, 113, 109, 20);
+		getContentPane().add(textField_5);
+		textField_5.setColumns(10);
+		
 		JLabel lblAddress = new JLabel("Email address");
 		lblAddress.setBounds(65, 162, 89, 14);
 		getContentPane().add(lblAddress);
@@ -135,7 +144,7 @@ public class Makeupex extends JFrame
 		btnSubmit.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent arg0) {
-				if((textField_1.getText().isEmpty())||(textField_2.getText().isEmpty())||(textField_3.getText().isEmpty()||textField_2.getText().isEmpty()))
+				if((textField_1.getText().isEmpty())||(textField_2.getText().isEmpty())||(textField_3.getText().isEmpty()||textField_4.getText().isEmpty()||textField_5.getText().isEmpty()))
 					{
 					JOptionPane.showMessageDialog(null, "Data Missing");
 				
@@ -148,6 +157,8 @@ public class Makeupex extends JFrame
 				String coll_id_f = textField_2.getText();
 				String conf = textField_3.getText();
 				String conf1 = textField_4.getText();
+				String str = textField_5.getText();
+				
 				
 				
 				String rdbtnanswer=null;
@@ -179,6 +190,8 @@ public class Makeupex extends JFrame
 				
 				textField_3.setText(null);
 				textField_4.setText(null);
+				textField_5.setText(null);
+				
 				
 				
 				
